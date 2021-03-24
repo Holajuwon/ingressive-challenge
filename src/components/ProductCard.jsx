@@ -3,7 +3,7 @@ import { FaRegComment } from "react-icons/fa";
 
 const ProductCard = (props) => {
   return (
-    <div className="bg-gray-500 shadow-lg max-w-sm rounded-lg  cursor-pointer w-80 h-90 mb-10">
+    <div className="bg-gray-500 shadow-lg max-w-sm rounded-lg  cursor-pointer w-72 h-90 mb-10">
       <img
         src={props.imagesrc}
         alt={props.imagealt}
@@ -14,14 +14,14 @@ const ProductCard = (props) => {
         <p className="text-sm text-gray-500">
           {props.companyDescription.slice(0, 70)}
         </p>
-        <div className="flex justify-around content-center">
-          <p className="m-1 px-2 py-1 rounded-md shadow-lg bg-orange-900 active:bg-orange-a400 font-bold btns">
+        <div className="flex justify-around content-center text-sm">
+          <p className="m-1 px-1.5 py-1 rounded-md shadow-lg bg-orange-900 active:bg-orange-a400 font-bold btns">
             + {props.companyVotes}
           </p>
-          <p className="m-1 px-2 py-1 rounded-md shadow-lg flex space-x-2 bg-gray-500 active:bg-gray-700 font-bold btns">
+          <p className="m-1 px-1.5 py-1 rounded-md shadow-lg flex space-x-2 bg-gray-500 active:bg-gray-700 font-bold btns">
             <FaRegComment size="20px" /> <p>{props.commentCount}</p>
           </p>
-          <p className="m-1 px-2 py-1 rounded-md  shadow-lg border-gray-700 border-2">
+          <p className="m-1 px-1.5 py-1 rounded-md  shadow-lg border-gray-700 border-2">
             {props.tag}
           </p>
         </div>
